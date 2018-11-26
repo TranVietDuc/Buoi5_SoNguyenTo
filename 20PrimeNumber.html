@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20primeNumber</title>
+</head>
+<body>
+<script>
+   document.write(" 2 la so nguyen to thu 1" + '<br/>');
+   var count = 2;
+   for(var N = 3 ; count <= 20;  )
+   {
+       for (var a = 2 ; a < N ; a++)
+       {
+           if (N % a == '0')
+           {
+              N++;
+              a = 2;
+           }
+       }
+       document.write( N + " la so nguyen to thu " + count + '<br>');
+       count += 1;
+       N +=1 ;
+   }
+</script>
+</body>
+</html>
